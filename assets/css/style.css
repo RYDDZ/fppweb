@@ -1,0 +1,109 @@
+/* styles.css */
+body {
+    background: linear-gradient(15deg, rgb(22, 22, 22) 70%, rgb(140, 140, 140));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.form-control {
+    border-radius: 0.375rem;
+}
+
+.btn {
+    border-radius: 0.375rem;
+}
+
+.table {
+    margin-top: 30px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table td {
+    background-color: #f9f9f9;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.nav-item a{
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-brand{
+    font-weight: 500;
+}
+
+.nav-item a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+.nav-item a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.nav-item a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
